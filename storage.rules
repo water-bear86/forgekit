@@ -1,0 +1,27 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn() &&
+        firestore.exists(/databases/(default)/documents/adminUsers/$(request.auth.uid));
+    }
+
+    match /licenses/{licenseId}/{fileName} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /trait-packs/{packId}/{fileName=**} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

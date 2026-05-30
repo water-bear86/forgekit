@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="TV antenna ears rare trait">
+  <path d="M362 352 198 244l92 176Z" fill="#78a650" stroke="#15110a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M838 352 1002 244 910 420Z" fill="#78a650" stroke="#15110a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M424 238 274 96M776 238 926 96" stroke="#15110a" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="274" cy="96" r="18" fill="#f3c84b" stroke="#15110a" stroke-width="8"/>
+  <circle cx="926" cy="96" r="18" fill="#f3c84b" stroke="#15110a" stroke-width="8"/>
+  <path d="M252 138c-28 20-42 44-42 72M948 138c28 20 42 44 42 72" fill="none" stroke="#8fc7d6" stroke-width="8" stroke-linecap="round"/>
+</svg>

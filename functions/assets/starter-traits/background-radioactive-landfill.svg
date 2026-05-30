@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Radioactive landfill background rare trait">
+  <rect width="1200" height="760" fill="#1f2b22"/>
+  <path d="M0 610c140-96 274-96 402 0s262 96 402 0 266-96 396 0v150H0Z" fill="#55672f" stroke="#15110a" stroke-width="12"/>
+  <g stroke="#15110a" stroke-width="10" stroke-linejoin="round">
+    <rect x="120" y="452" width="116" height="122" fill="#c8ff3d"/>
+    <rect x="518" y="410" width="164" height="164" fill="#c8ff3d"/>
+    <rect x="922" y="464" width="118" height="110" fill="#c8ff3d"/>
+  </g>
+  <g fill="#15110a">
+    <path d="M176 476 144 536h64Z"/>
+    <path d="M600 442 556 530h88Z"/>
+    <path d="M980 490 948 548h64Z"/>
+  </g>
+  <path d="M86 236c146-48 284-48 414 0s272 48 426 0" fill="none" stroke="#c8ff3d" stroke-width="16" stroke-linecap="round" opacity="0.55"/>
+</svg>

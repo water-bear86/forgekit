@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Radioactive acne rare mutation trait">
+  <g fill="#c8ff3d" stroke="#15110a" stroke-width="8">
+    <circle cx="438" cy="486" r="18"/>
+    <circle cx="512" cy="540" r="14"/>
+    <circle cx="690" cy="502" r="17"/>
+    <circle cx="760" cy="562" r="13"/>
+    <circle cx="604" cy="396" r="12"/>
+  </g>
+  <g stroke="#c8ff3d" stroke-width="8" stroke-linecap="round">
+    <path d="M438 444v-30M414 462l-24-18M462 462l24-18"/>
+    <path d="M690 460v-30M666 478l-24-18M714 478l24-18"/>
+  </g>
+</svg>

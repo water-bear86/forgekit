@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Forklift certified badge extra trait">
+  <g transform="translate(760 472)">
+    <path d="M0 0h164v130H0Z" fill="#f3c84b" stroke="#15110a" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M22 98h116M44 32v66M92 52v46M132 22v76" stroke="#15110a" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="44" cy="124" r="14" fill="#15110a"/>
+    <circle cx="124" cy="124" r="14" fill="#15110a"/>
+  </g>
+</svg>

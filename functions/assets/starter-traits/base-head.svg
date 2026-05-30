@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Starter goblin base head">
+  <path d="M282 318 90 220l154 216c-14 54-7 107 21 158 55 101 183 143 335 143s280-42 335-143c28-51 35-104 21-158l154-216-192 98c-72-87-182-133-318-133s-246 46-318 133Z" fill="#78a650" stroke="#15110a" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M314 330c74-72 171-108 286-108s212 36 286 108" fill="none" stroke="#4b742d" stroke-width="20" stroke-linecap="round" opacity="0.45"/>
+  <path d="M438 568c102 45 222 45 324 0" fill="none" stroke="#15110a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M570 498c24 18 36 18 60 0" fill="none" stroke="#15110a" stroke-width="12" stroke-linecap="round"/>
+</svg>

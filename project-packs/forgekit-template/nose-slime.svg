@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Slime drip nose trait">
+  <path d="M592 466c12-34 32-34 44 0l22 62c8 24-8 46-38 46h-40c-30 0-46-22-38-46l22-62Z" fill="#5d8b2f" stroke="#15110a" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M606 560c0 34-22 46-22 70M634 560c0 22 18 36 18 58" fill="none" stroke="#9ed05f" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="592" cy="528" r="7" fill="#15110a"/>
+  <circle cx="628" cy="528" r="7" fill="#15110a"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Condemned DMV counter background">
+  <rect width="1200" height="760" fill="#2f281a"/>
+  <rect x="44" y="46" width="1112" height="668" fill="#b8b167" stroke="#15110a" stroke-width="12"/>
+  <rect x="68" y="505" width="1064" height="150" fill="#59472e" stroke="#15110a" stroke-width="10"/>
+  <rect x="84" y="92" width="450" height="72" fill="#ddd792" stroke="#15110a" stroke-width="8"/>
+  <text x="108" y="142" font-family="monospace" font-size="44" fill="#15110a">GOBLINTOWN DMV</text>
+  <rect x="720" y="104" width="270" height="120" fill="#8f8850" stroke="#15110a" stroke-width="8"/>
+  <path d="M748 188h214M748 152h214" stroke="#15110a" stroke-width="8" stroke-linecap="square"/>
+  <circle cx="1040" cy="140" r="36" fill="#c94b3b" stroke="#15110a" stroke-width="8"/>
+  <path d="M92 392c140-42 252-42 336 0s196 42 336 0 252-42 336 0" fill="none" stroke="#514426" stroke-width="14" opacity="0.75"/>
+</svg>

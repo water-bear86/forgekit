@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Wet cigarette mouth trait">
+  <path d="M500 574c58 34 142 34 200 0" fill="none" stroke="#15110a" stroke-width="16" stroke-linecap="round"/>
+  <g transform="rotate(9 690 575)">
+    <rect x="642" y="556" width="168" height="34" rx="6" fill="#e9ddbc" stroke="#15110a" stroke-width="8"/>
+    <rect x="762" y="556" width="48" height="34" rx="4" fill="#a45b37" stroke="#15110a" stroke-width="8"/>
+    <path d="M622 566c-18 16-18 38 0 54M596 560c-24 26-24 58 0 84" fill="none" stroke="#8fc7d6" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  </g>
+  <path d="M684 600c8 20 4 38-12 54" fill="none" stroke="#8fc7d6" stroke-width="8" stroke-linecap="round"/>
+</svg>
