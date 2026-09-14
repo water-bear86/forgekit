@@ -169,3 +169,12 @@ npx -y firebase-tools@latest deploy --only hosting,functions:license-forge,fires
 Mainnet minting is deliberately gated. Set `FORGEKIT_CLUSTER=mainnet-beta` and
 `FORGEKIT_ENABLE_MAINNET_MINT=1` only after a devnet mint has been verified end
 to end.
+
+## Donate
+
+If you found this to be useful, consider donating by sending magic internet monies to:
+
+```text
+sol: 79TNuyFNZWhDeFF1RUNA5Xk9Pccvb7xPYqLukBxCeWbb
+evm: 0xa2c0abd1a1fcb5aee12f80651ae7f646371a66ed
+```
