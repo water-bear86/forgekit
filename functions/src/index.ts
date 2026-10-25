@@ -11,7 +11,7 @@ import type { ParsedLootClaim } from "../../shared/lootClaim.js";
 import { CORE_ROYALTY_BASIS_POINTS } from "./metaplexCore.js";
 import { mintCoreLicense as mintCoreLicenseOnChain, type CoreMintInput } from "./metaplexCore.js";
 import { verifySignedLootClaim } from "./lootClaims.js";
-import { fetchCoinGeckoSolPrice, fetchDexScreenerTokenPrice } from "./prices.js";
+import { fetchCoinMarketCapSolPrice, fetchDexScreenerTokenPrice } from "./prices.js";
 import { createQuote } from "./quotes.js";
 import type { PriceSnapshotInput } from "../../shared/pricing.js";
 import {
@@ -672,7 +672,7 @@ export function createApp(dependencies: QuoteRouteDependencies = {}) {
           allowedPairAddress: tokenConfig.dexScreenerPair,
           timeoutMs: 2500,
         }),
-      dependencies.fetchSolUsd?.() ?? fetchCoinGeckoSolPrice(fetch, { timeoutMs: 2500 }),
+      dependencies.fetchSolUsd?.() ?? fetchCoinMarketCapSolPrice(fetch, { timeoutMs: 2500 }),
     ]);
 
     const prices = { tokenUsd, solUsd };
@@ -927,4 +927,4 @@ async function persistLootClaimToFirestore(record: PersistedLootClaimRecord): Pr
   await batch.commit();
 }
 
-export const api = onRequest({ region: "us-central1", timeoutSeconds: 120, memory: "1GiB" }, createApp());
+export const api = onRequest({ region: "us-central1", timeoutSeconds: 120, memory: "1GiB", secrets: ["CMC_PRO_API_KEY"] }, createApp());

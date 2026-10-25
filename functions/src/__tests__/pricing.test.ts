@@ -15,11 +15,11 @@ describe("function pricing helpers", () => {
 
   it("reads the first DexScreener pair price from a fetch implementation", async () => {
     const fetchImpl = async () =>
-      new Response(JSON.stringify({ pairs: [{ chainId: "solana", priceUsd: "0.0001512", liquidity: { usd: 1000 } }] }), {
+      new Response(JSON.stringify({ pairs: [{ chainId: "solana", baseToken: { address: "So11111111111111111111111111111111111111112" }, priceUsd: "0.0001512", liquidity: { usd: 1000 } }] }), {
         status: 200,
         headers: { "content-type": "application/json" },
       });
-    const price = await fetchDexScreenerTokenPrice("Mint111", fetchImpl);
+    const price = await fetchDexScreenerTokenPrice("So11111111111111111111111111111111111111112", fetchImpl);
     assert.equal(price, 0.0001512);
   });
 
@@ -29,16 +29,16 @@ describe("function pricing helpers", () => {
         JSON.stringify({
           pairs: [
             { chainId: "ethereum", priceUsd: "9", liquidity: { usd: 1_000_000 } },
-            { chainId: "solana", priceUsd: "0.0000001", liquidity: { usd: 0 } },
-            { chainId: "solana", priceUsd: "wat", liquidity: { usd: 10_000 } },
-            { chainId: "solana", priceUsd: "0.0001", liquidity: { usd: 100 } },
-            { chainId: "solana", priceUsd: "0.0001512", liquidity: { usd: 25_000 } },
+            { chainId: "solana", baseToken: { address: "So11111111111111111111111111111111111111112" }, priceUsd: "0.0000001", liquidity: { usd: 0 } },
+            { chainId: "solana", baseToken: { address: "So11111111111111111111111111111111111111112" }, priceUsd: "wat", liquidity: { usd: 10_000 } },
+            { chainId: "solana", baseToken: { address: "So11111111111111111111111111111111111111112" }, priceUsd: "0.0001", liquidity: { usd: 100 } },
+            { chainId: "solana", baseToken: { address: "So11111111111111111111111111111111111111112" }, priceUsd: "0.0001512", liquidity: { usd: 25_000 } },
           ],
         }),
         { status: 200, headers: { "content-type": "application/json" } },
       );
 
-    const price = await fetchDexScreenerTokenPrice("Mint111", fetchImpl);
+    const price = await fetchDexScreenerTokenPrice("So11111111111111111111111111111111111111112", fetchImpl);
 
     assert.equal(price, 0.0001512);
   });
@@ -48,14 +48,14 @@ describe("function pricing helpers", () => {
       new Response(
         JSON.stringify({
           pairs: [
-            { chainId: "solana", pairAddress: "lower", priceUsd: "0.0002", liquidity: { usd: 50_000 } },
-            { chainId: "solana", pairAddress: "allowed", priceUsd: "0.0001512", liquidity: { usd: 1_000 } },
+            { chainId: "solana", baseToken: { address: "So11111111111111111111111111111111111111112" }, pairAddress: "lower", priceUsd: "0.0002", liquidity: { usd: 50_000 } },
+            { chainId: "solana", baseToken: { address: "So11111111111111111111111111111111111111112" }, pairAddress: "allowed", priceUsd: "0.0001512", liquidity: { usd: 1_000 } },
           ],
         }),
         { status: 200, headers: { "content-type": "application/json" } },
       );
 
-    const price = await fetchDexScreenerTokenPrice("Mint111", fetchImpl, { allowedPairAddress: "ALLOWED" });
+    const price = await fetchDexScreenerTokenPrice("So11111111111111111111111111111111111111112", fetchImpl, { allowedPairAddress: "allowed" });
 
     assert.equal(price, 0.0001512);
   });
